@@ -1,0 +1,44 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.current {
+  color: $active-link-color;
+}
+
+.nav-item {
+  position: relative;
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+
+  &:not(:last-child) {
+  margin-right: 50px;
+  }
+
+  &:hover, 
+  &:focus {
+  color: $active-link-color;
+  }
+
+  .current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  background-color: $active-link-color;
+  }
+}
