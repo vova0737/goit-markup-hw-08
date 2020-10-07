@@ -9,6 +9,7 @@
 
 .clients-list {
   display: flex;
+  justify-content: center;
   margin: -15px;
   padding-left: 0;
   @media screen and (max-width: 1200px) {
