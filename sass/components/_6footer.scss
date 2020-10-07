@@ -1,0 +1,73 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+  color: $primary-white-color;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;       
+    flex-wrap: wrap;
+  }
+}
+
+.footer-contgroup {
+  margin-top: 20px;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.055em;
+  color: $primary-white-color;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-contacts {
+  display: block;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px){
+    margin-right: 70px;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-heading,
+.subscribe-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.footer-group {
+  @media screen and (max-width: 1199px){
+    margin-bottom: 60px;
+  }
+}
+
+.footer-socials-bckgr {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon .footer-icon {
+  fill: $primary-white-color;
+}

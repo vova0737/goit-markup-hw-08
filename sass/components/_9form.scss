@@ -55,6 +55,9 @@
   font-weight: 400;
   line-height: 0.85;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }
 
 .checkbox-icon {

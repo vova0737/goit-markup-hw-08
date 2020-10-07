@@ -6,7 +6,6 @@
 
 .link {
   text-decoration: none;
-  
 }
 
 .flex {
@@ -20,12 +19,31 @@ body {
   color: var(--primary-text-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  @include for-size(mobile) {
+    width: 480px;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -37,8 +55,4 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0)
-}
-
-.flexbox {
-  display: flex;
 }
