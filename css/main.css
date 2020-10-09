@@ -1412,11 +1412,12 @@ header {
 }
 
 .modal-title {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 30px;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -1431,6 +1432,7 @@ header {
 }
 
 .form-comment {
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -1440,7 +1442,7 @@ header {
   display: block;
   margin-top: 4px;
   padding-left: 42px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1472,25 +1474,26 @@ header {
 
 .checkbox {
   display: block;
+  text-align: left;
   margin-top: 20px;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 0.85;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .checkbox {
-    font-size: 12px;
+    font-size: 14px;
+    letter-spacing: 0.04em;
   }
 }
 
 .checkbox-icon {
   content: '';
   display: inline-block;
-  margin-left: 12px;
   margin-right: 5px;
   vertical-align: middle;
   width: 16px;
@@ -1513,6 +1516,12 @@ header {
   color: #2196F3;
   border-bottom: 1px solid currentColor;
   line-height: 0.85;
+}
+
+@media screen and (max-width: 1199px) {
+  .checkbox-link {
+    font-size: 12px;
+  }
 }
 
 .form-icon {
