@@ -17,9 +17,10 @@
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    top: calc(100% + 2px);
-    left: 0;
-    width: 100%;
+    top: calc(100% + 1px);
+    // left: 0;
+    left: -15px;
+    width: calc(100% + 30px); //
     padding-bottom: 44px;
     z-index: 1;
     background-color: $primary-white-color;
@@ -51,6 +52,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 60px;
+    // min-width: 480px;
   }
 }
 

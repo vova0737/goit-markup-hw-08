@@ -7,14 +7,15 @@
   justify-content: center;
   text-align: center;
   background: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-  url("../img/mobile/banner-mob.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url("../img/mobile/banner-mob.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media screen and (max-width: 1199px) {
+    height: 400px;
+  }
   @media screen and (min-device-pixel-ratio: 2),
   	screen and (min-resolution: 192dpi),
 	  screen and (min-resolution: 2dppx) {
@@ -23,14 +24,13 @@
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ),
+    rgba(47, 48, 58, 0.4)),
     url("../img/tablet/banner-tab.jpg");
     max-width: 768px;
-  @media screen and (min-device-pixel-ratio: 2),
-  	screen and (min-resolution: 192dpi),
-		screen and (min-resolution: 2dppx) {
-    background-image: url("../img/tablet/banner-tab@2x.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+  	  screen and (min-resolution: 192dpi),
+		  screen and (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/banner-tab@2x.jpg");
     }
   }
   @media screen and (min-width: 1200px) {
@@ -41,9 +41,9 @@
     ),
     url("../img/banner.jpg");
     @media screen and (min-device-pixel-ratio: 2),
-		screen and (min-resolution: 192dpi),
-		screen and (min-resolution: 2dppx) {
-    background-image: url("../img/banner@2x.jpg");
+		  screen and (min-resolution: 192dpi),
+		  screen and (min-resolution: 2dppx) {
+      background-image: url("../img/banner@2x.jpg");
     }
   }
 }
