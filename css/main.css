@@ -602,8 +602,8 @@ header {
 }
 
 .banner {
-  height: 600px;
-  max-width: 480px;
+  height: 400px;
+  max-width: 100%;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
@@ -616,12 +616,6 @@ header {
   background-position: center;
 }
 
-@media screen and (max-width: 1199px) {
-  .banner {
-    height: 400px;
-  }
-}
-
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .banner {
     background-image: url("../img/mobile/banner-mob@2x.jpg");
@@ -631,7 +625,6 @@ header {
 @media screen and (min-width: 768px) {
   .banner {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/tablet/banner-tab.jpg");
-    max-width: 768px;
   }
 }
 
@@ -643,6 +636,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   .banner {
+    height: 600px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/banner.jpg");
   }
